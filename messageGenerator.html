@@ -1,0 +1,25 @@
+<head>
+    <title>
+        I Think You Should Leave Quote Mixer
+    </title>
+    <script src="./index.js"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1>I Think You Should Leave Quote Mixer</h1>
+    <p>'I Think You Should Leave' is a Netflix skit television show that I am a personal fan of. This word mixer will take a random quote from the show, and mix it with words from another quote. This show has such outlandish quotes, that mixing up the verbs and nouns can sometimes make the quote sound more normal than it orignally was. A fan? Try to guess the original quote after generating.</p>
+    <div id="button-container">
+        <button id="quote-button">Generate Quote</button>
+    </div>
+    <div id="quote-container">
+        <h3 id="generated-quote"></h3>
+    </div>
+    
+    <div id="reveal-container">
+        <h3 id="actual-quote">Click to reveal the actual quote</h3>
+    </div>
+    <script>
+        document.getElementById('quote-button').addEventListener('click', buttonPressed);
+        document.getElementById('reveal-container').addEventListener('click', revealQuote);
+    </script>
+</body>
